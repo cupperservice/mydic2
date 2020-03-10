@@ -1,0 +1,1052 @@
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.95s
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/shared/SharedMessages.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/target/scala-2.12/twirl/main/views/html/index.template.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/target/web/public/main/5760fe0891dbd441ed74/cupper/mydic2/Main.scala
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala' because it doesn't belong to a build target.
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.21s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Application.scala
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Recognize.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Recognize.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/ScalaJSExample.scala
+INFO  skipping build import with status 'Dismissed'
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala' because it doesn't belong to a build target.
+INFO  skipping build import with status 'Dismissed'
+something's wrong: no file:///Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala in Array[String]RangePosition(file:///Users/k_kawashima/rep/mydic2/client/src/main/scala/cupper/mydic2/Main.scala, 416, 416, 429)
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/shared/SharedMessages.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+Feb 13, 2020 9:24:16 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1460)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:474)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:24:17 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:24:17 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:24:17 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:41 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1460)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:41 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1460)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:42 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1460)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:42 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:43 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 9:25:43 AM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1810)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1801)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1624)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:440)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.27s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.01s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+Feb 13, 2020 3:41:18 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 13, 2020 3:41:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:64)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:141)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:138)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:229)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:228)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:58)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:298)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:479)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:478)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:272)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1929)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$enterSyms$1(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1986)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1879)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5637)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:5780)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5346)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5639)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:114)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:453)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1333)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:665)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:814)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1225)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:367)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+
+Feb 13, 2020 3:41:18 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 13, 2020 3:41:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:64)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:141)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:138)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:229)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:228)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:58)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:298)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:479)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:478)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:272)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1929)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$enterSyms$1(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1986)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1879)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5637)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:5780)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5346)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5639)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:114)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:453)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1333)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:665)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:814)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1225)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:367)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+Feb 13, 2020 3:46:57 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:46:57 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:46:58 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:46:58 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:461)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:344)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:46:58 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 13, 2020 3:48:34 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:34 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:36 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 13, 2020 3:48:40 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:471)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+Feb 13, 2020 3:58:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3116
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.3s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.01s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /Users/k_kawashima/rep/mydic2/server/app/cupper/mydic2/controllers/Words.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.92s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.95s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.9s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/root/workspace'
+INFO  time: initialize in 0.66s
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+INFO  no build target: using presentation compiler with only scala-library
+Feb 16, 2020 1:12:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.meta.internal.metals.CancelTokens$$$Lambda$441/00000000506F95D0.apply(Unknown Source)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:821)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.pc.OffsetParams.checkCanceled(OffsetParams.java:29)
+	at scala.meta.internal.metals.CompilerOffsetParams.checkCanceled(CompilerOffsetParams.scala:7)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:66)
+	at scala.meta.internal.pc.CompletionProvider$$Lambda$1307/0000000024C82610.apply(Unknown Source)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at scala.collection.Iterator.toStream(Iterator.scala:1415)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1414)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1429)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1415)
+	at scala.collection.Iterator$$Lambda$138/000000004414E2C0.apply(Unknown Source)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1171)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1161)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$$Lambda$648/000000002400CC70.apply(Unknown Source)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$$Lambda$94/000000005005DB90.accept(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 10 more
+
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+Exception in thread "pool-5-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:821)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerAccess$$Lambda$619/000000005016AA40.apply$mcV$sp(Unknown Source)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+Feb 16, 2020 1:44:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 408
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/DatabaseExecutionContext.scala
+Feb 16, 2020 1:53:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 929
+Feb 16, 2020 1:53:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 941
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+Feb 16, 2020 2:11:55 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+Feb 16, 2020 2:13:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1351
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala in cupper.mydic2.Point[Double]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala, 1634, 1634, 1647)
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala in cupper.mydic2.Point[Double]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala, 1631, 1631, 1644)
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Exception in thread "pool-5-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:821)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerAccess$$Lambda$619/000000005016AA40.apply$mcV$sp(Unknown Source)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+Feb 16, 2020 2:38:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2351
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala in cupper.mydic2.Point[Double]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala, 1417, 1417, 1430)
+WARN  no build target for: /root/workspace/dev-res/shared/src/main/scala/cupper/mydic2/shared/SharedMessages.scala
+WARN  no build target for: /root/workspace/dev-res/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+Feb 16, 2020 4:11:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2423
+WARN  no build target for: /root/workspace/dev-res/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[<error>]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 252)
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[<error>]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 245)
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[<error>]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 246)
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[String]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 250)
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[String]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 250)
+something's wrong: no file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala in Option[String]RangePosition(file:///root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala, 236, 236, 250)
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala
+Feb 16, 2020 4:26:18 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 16, 2020 4:26:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.$anonfun$baseParams$1(Completions.scala:917)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg$$Lambda$1455/00000000300159E0.apply(Unknown Source)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.baseParams$lzycompute(Completions.scala:917)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.baseParams(Completions.scala:913)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.allParams$lzycompute(Completions.scala:931)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.allParams(Completions.scala:930)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.params$lzycompute(Completions.scala:937)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.params(Completions.scala:936)
+	at scala.meta.internal.pc.Completions$CompletionPosition$Arg.contribute(Completions.scala:1044)
+	at scala.meta.internal.pc.CompletionProvider.expected$1(CompletionProvider.scala:357)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:435)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala
+Feb 16, 2020 4:27:25 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 16, 2020 4:28:02 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/http/Http.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+Feb 16, 2020 4:36:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4781
+Feb 16, 2020 4:36:47 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+Feb 16, 2020 4:38:47 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 16, 2020 4:38:48 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 16, 2020 4:38:50 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+Feb 16, 2020 4:38:55 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: null
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+Feb 16, 2020 4:39:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5155
+Feb 16, 2020 4:39:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5174
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+Feb 16, 2020 5:10:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6449
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/v1/MyDicRouter.scala
+Feb 16, 2020 6:52:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7333
+Feb 16, 2020 6:54:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7532
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/v1/MyDicRouter.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/transfer/Word.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.91s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/root/workspace'
+INFO  time: initialize in 0.63s
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+Feb 17, 2020 8:16:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/DatabaseExecutionContext.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/WordRepo.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/dao/WordRepo.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/transfer/Word.scala
+WARN  no build target for: /root/workspace/dev-res/shared/src/main/scala/cupper/mydic2/messages/Messages.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/client/src/main/scala/cupper/mydic2/Main.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+Feb 17, 2020 8:39:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 883
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Words.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/Examples.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/ExampleController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/MyDic.scala
+Feb 17, 2020 8:41:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1274
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/messages/Word.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+WARN  no build target for: /root/workspace/dev-res/server/app/cupper/mydic2/controllers/WordController.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.15s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.91s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 1.15s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/root/workspace'
+INFO  time: initialize in 0.64s
+WARN  no build tool detected in workspace '/root/workspace'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.93s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.99s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.91s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.1 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.91s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.1 in workspace '/Users/k_kawashima/rep/mydic2'
+INFO  time: initialize in 0.96s
+WARN  no build tool detected in workspace '/Users/k_kawashima/rep/mydic2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  skipping build import with status 'Dismissed'

@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                         cupper.mydic2.controllers.MyDic2.index
+
+GET         /word                     cupper.mydic2.controllers.WordController.getInformation
+GET         /word/                     cupper.mydic2.controllers.WordController.getInformation
++ nocsrf
+POST        /word                     cupper.mydic2.controllers.WordController.createIfNotExist
+GET         /word/:id/example         cupper.mydic2.controllers.ExampleController.get(id:Int)
+POST        /word/:id/example         cupper.mydic2.controllers.ExampleController.create(id:Int)
+
+# Prefix must match `play.assets.urlPrefix`
+GET         /assets/*file             controllers.Assets.at(file)
+GET         /versionedAssets/*file    controllers.Assets.versioned(path="/public", file: Asset)
