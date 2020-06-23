@@ -23,6 +23,18 @@ class WordController @Inject()(
     }
   }
 
+  def getAll = Action.async { implicit request =>
+    Future {
+      val words = for(word <- usecase.getAll()) yield Json.obj (
+        "id" -> word.id,
+        "text" -> word.word,
+        "ref_count"-> word.ref_count,
+        "last_ref_time" -> dateTime2String(word.last_ref_time)
+      ).toString()
+      Ok(words.mkString("[", ",", "]"))
+    }
+  }
+
   def createIfNotExist = Action.async { implicit request =>
     request.body.asJson match {
       case Some(w) =>

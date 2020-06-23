@@ -21,4 +21,8 @@ class WordModel @Inject() (repo: WordRepo) {
         Await.result(repo.create(word), Duration.Inf)
     })
   }
+
+  def getAll(): List[Values.Word] = {
+    repo.getAll()
+  }
 }

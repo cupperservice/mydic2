@@ -1,12 +1,11 @@
 package cupper.mydic2.dao
 
-import java.sql.Connection
-import javax.inject.Inject
+import java.sql.{Connection, ResultSet}
 
+import javax.inject.Inject
 import play.api.db.Database
 
 import scala.concurrent.Future
-
 import cupper.mydic2.models.{WordRepo => WordRepoIF}
 import cupper.mydic2.models.Values.Word
 import cupper.mydic2.models.Values.DateTime
@@ -15,8 +14,7 @@ import cupper.mydic2.models.Values.DateTimeFormatter._
 class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecutionContext) extends WordRepoIF {
   override def count(): Future[Int] = {
     Future[Int] {
-      db.withConnection { conn =>
-        val connection = db.getConnection()
+      db.withConnection { connection =>
         val stmt = connection.prepareStatement("select count(*) from word")
         val rs = stmt.executeQuery()
         rs.next()
@@ -27,8 +25,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
 
   override def get(id: Int): Future[Option[Word]] = {
     Future[Option[Word]] {
-      db.withConnection { conn =>
-        val connection = db.getConnection()
+      db.withConnection { connection =>
         val stmt = connection.prepareStatement("select * from word where id=?")
         stmt.setInt(1, id)
         val rs = stmt.executeQuery()
@@ -63,7 +60,6 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
     }(databaseExecutionContext)
   }
 
-
   override def updateReference(id: Int): Future[Int] = {
     Future[Int] {
       db.withConnection { connection =>
@@ -73,6 +69,28 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
         stmt.executeUpdate()
      }
     }(databaseExecutionContext)
+  }
+
+  override def getAll(): List[Word] = {
+    db.withConnection(connection => {
+      val stmt = connection.prepareStatement("select * from word order by last_ref_time desc limit 10")
+      val rs = stmt.executeQuery()
+
+      def createResult(result: List[Word]): List[Word] = {
+        if(rs.next()) {
+          val word = Word(
+            rs.getInt(1),
+            rs.getString(2),
+            rs.getInt(3),
+            string2DateTime(rs.getString(4))
+          )
+          word :: createResult(result)
+        } else {
+          result
+        }
+      }
+      createResult(List[Word]())
+    })
   }
 
   def _find(word: String, connection: Connection): Option[Word] = {

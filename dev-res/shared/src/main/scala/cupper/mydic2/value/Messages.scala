@@ -1,4 +1,4 @@
-package cupper.mydic2.http
+package cupper.mydic2.value
 
 trait Messages {
   val M000 = "Success"

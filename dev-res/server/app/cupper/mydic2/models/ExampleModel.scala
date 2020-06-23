@@ -18,7 +18,33 @@ class ExampleModel @Inject() (exampleRepo: ExampleRepo, wordRepo: WordRepo) {
     }
   }
 
-  def create(wordId: Int, content: String): Boolean = {
-    exampleRepo.create(wordId, content)
+  def create(wordId: Int, text: String): Option[Example] = {
+    val word = Await.result(wordRepo.get(wordId), Duration.Inf)
+    word match {
+      case Some(word) =>
+        exampleRepo.create(word, text)
+      case None =>
+        None
+    }
+  }
+
+  def get(wordId: Int, exampleId: Int): Option[Example] = {
+    val word = Await.result(wordRepo.get(wordId), Duration.Inf)
+    word match {
+      case Some(word) =>
+        exampleRepo.get(exampleId, word)
+      case None =>
+        None
+    }
+  }
+
+  def update(wordId: Int, exampleId: Int, text: String): Option[Example] = {
+    val example = get(wordId, exampleId)
+    example match {
+      case Some(e) =>
+        exampleRepo.update(exampleId, text, e.word)
+      case None =>
+        None
+    }
   }
 }

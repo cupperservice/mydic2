@@ -3,65 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="worker-src blob: ;default-src * data: gap: blob: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <title>The Scala.js Tutorial</title>
-
+    <title>My dictionary</title>
     <!-- Include Scala.js compiled code -->
     @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
-    <style>
-      .canvas {
-        border: solid #000000;
-        width: 100%;
-        height: 100px;
-      }
-      .word {
-        border: solid #000000;
-        width: 100%;
-        height: 100px;
-        font-size: xx-large;
-      }
-      #check-button {
-        width: 100%;
-        height: 50px;
-        font-size: x-large;
-      }
-
-      #create-example-dialog {
-        position:absolute;
-        border-width:thick;
-        border-style:ridge;
-        width:50%;
-        box-shadow:10px 10px 10px rgba(0,0,0,0.5);
-        border-radius:10px;
-        visibility: hidden
-      }
-    </style>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
   </head>
   <body>
-    <div id="header">
+    <div class="header" id="header">
       <ul>
-        <li>Home</li>
+        <li id="home">Home</li>
         <li id="word_count"></li>
       </ul>
     </div>
-    <div id="container">
-      <div>
-        <canvas id="canvas" class="canvas"></canvas>
+    <div class="tabs">
+      <div class="tab_content" id="screen-word">
+        <div>
+          <input id="text-word" class="word" type="text" />
+          <button id="btn-check">
+            <img src="/assets/images/search.png" />
+          </button>
+        </div>
+        <ul id="word_list"></ul>
       </div>
-      <div>Reference count:</div><div id="ref_count"></div>
-      <div>Last reference time:</div><div id="last_ref_time"></div>
-      <div>
-        <input id="result" class="word" type="text" />
+
+      <div class="tab_content" id="screen-example">
+        <input type="hidden" id="screen-example-word-id"></input>
+        <div>
+          <div class="ref_count">Reference count:<div class="ref_count" id="ref_count"></div>
+          </div>
+        </div>
+        <div>
+          <div class="last_ref_time">Last reference time:<div class="last_ref_time" id="last_ref_time"></div>
+          </div>
+        </div>
+        <div id="screen-example-word">
+          <button id="btn-speak">
+            <img src="/assets/images/speak.png" />
+          </button>
+        </div>
+        <ul id="examples">
+          <li name="[0]">Examples</li>
+        </ul>
       </div>
-      <button id="check-button">Check!</button>
-      <button id="new-example">New example</button>
-      <div>
-        <ul id="examples"></ul>
+
+      <div class="tab_content" id="screen-edit-example">
+        <div id="screen-edit-example-word"></div>
+        <input type="hidden" id="screen-edit-example-id">
+        <textarea id="screen-edit-example-content" rows="5" cols="100"></textarea>
+        <button id="screen-edit-example-create" >Apply</button>
+        <button id="screen-edit-example-cancel" >Cancel</button>
       </div>
     </div>
-    <div id="create-example-dialog">
-      <input id="example" type="text" />
-      <button id="create-example-btn">Create</button>
+    <div id="footer">
+      <p>Copyright 2020 CUPPER All Rights Reserved.</p>
     </div>
-    <div id="footer"></div>
   </body>
 </html>
