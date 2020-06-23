@@ -1,202 +1,95 @@
 package cupper.mydic2
 
 import org.scalajs.dom
-import org.scalajs.dom.ext._
 import org.scalajs.dom.document
 import org.scalajs.dom.window
+import cupper.mydic2.view.component.{Header, ScreenDetail, ScreenEditExample, ScreenWord}
+import cupper.mydic2.view.event.{ApplyEditExample, CancelEditExample, EditExample, Event, FindForWord}
+import cupper.mydic2.model.{Dictionary, RecordedExamples, RecordedWord}
+import cupper.mydic2.repository.Repository
+import cupper.mydic2.repository.http.RepositoryImpl
+import cupper.mydic2.value.Example
+import cupper.mydic2.value.Word
 
-import scala.scalajs.js.Dynamic.global
-import scala.scalajs.js
-import cupper.mydic2.domutils.DomUtils
-import org.scalajs.dom.raw.UIEvent
+import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 
-case class Point[T](val x: T, val y: T)
+object Main {
+  lazy val header = Header(document.getElementById("header").asInstanceOf[dom.html.Element])
+  lazy val screenWord = ScreenWord(document.getElementById("screen-word").asInstanceOf[dom.html.Element])
+  lazy val screenDetail = ScreenDetail(document.getElementById("screen-example").asInstanceOf[dom.html.Element])
+  lazy val screenEditExample = ScreenEditExample(document.getElementById("screen-edit-example").asInstanceOf[dom.html.Element])
 
-@js.native
-trait Resultx extends js.Any {
-  val text: String = js.native
-  val version: String = js.native
-}
+  val dic = new Dictionary {
+    override val repo: Repository = new RepositoryImpl {}
+  }
 
-object Main extends DomUtils {
+  var recordedWord: Option[RecordedWord] = None
+  var recordedExamples: Option[RecordedExamples] = None
+
   def main(args: Array[String]): Unit = {
     window.onload = (e) => setupUI(e)
   }
 
-  lazy val result: dom.html.Input = document.getElementById("result").asInstanceOf[dom.html.Input]
-  lazy val refCount = document.getElementById("ref_count")
-  lazy val lastRefTime = document.getElementById("last_ref_time")
-  lazy val examples = document.getElementById("examples")
-  lazy val newExample = document.getElementById("new-example").asInstanceOf[dom.html.Button]
-  lazy val createExampleDialog = document.getElementById("create-example-dialog").asInstanceOf[dom.html.Div]
-  lazy val createExampleBtn = document.getElementById("create-example-btn").asInstanceOf[dom.html.Button]
-
   def setupUI(e: dom.Event): Unit = {
-    setCanvas()
-
-    val checkBtn = document.getElementById("check-button").asInstanceOf[dom.html.Button]
-    val registedWordCount = document.getElementById("word_count")
-    getInformation(registedWordCount)
-
-    checkBtn.onclick = (event) => {
-      import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
-      import cupper.mydic2.http.CreateIfNotExist
-
-      for {
-        res <- CreateIfNotExist(result.value)
-      } {
-        setTextContent(refCount, res.ref_count.toString)
-        setTextContent(lastRefTime, res.last_ref_time)
-        val event = document.createEvent("UIEvent")
-        event.asInstanceOf[UIEvent].initUIEvent("modified", false, true, window, res.id)
-        document.dispatchEvent(event)
-      }
+    goHome()
+    for(info <- dic.getInformation()) {
+      header.refresh(info.numOfAllWords)
     }
 
-    newExample.onclick = (event) => {
-      val myXs = document.body.scrollLeft
-      val myYs = document.body.scrollTop
-
-      createExampleDialog.style.left = "500"
-      createExampleDialog.style.top = "500"
-      createExampleDialog.style.visibility = "visible"
-    }
-
-    createExampleBtn.onclick = (event) => {
-      createExampleDialog.style.visibility = "hidden"
-    }
-
-    document.addEventListener("modified", (event: dom.Event) => {
-      import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
-      import cupper.mydic2.http.GetExamples
-
-      for(res <- GetExamples(event.asInstanceOf[UIEvent].detail)) {
-        clearList(examples)
-        for(item <- res) {
-          addItem(examples, item.content)
-        }
-      }
-    })
+    Event.addEventListener(Event.goHome, (event: dom.CustomEvent) => goHome())
+    Event.addEventListener(Event.findForWord, (event: dom.CustomEvent) => findForWord(event))
+    Event.addEventListener(Event.editExample, (event: dom.CustomEvent) => editExample(event))
+    Event.addEventListener(Event.applyEditExample, (event: dom.CustomEvent) => applyEditExample(event))
+    Event.addEventListener(Event.cancelEditExample, (event: dom.CustomEvent) => cancelEditExample(event))
   }
 
-  def getInformation(node: dom.Node): Unit = {
-    import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
-    import cupper.mydic2.http.GetInformation
+  def goHome(): Unit = {
+    for(list <- dic.getWords()) {
+      window.console.log("==================")
+      screenWord.show(list)
+    }
+    screenDetail.disable()
+    screenEditExample.disable()
+  }
 
+  def findForWord(event: dom.CustomEvent): Unit = {
+    val text = event.detail.asInstanceOf[FindForWord]
     for {
-      res <- GetInformation()
-    } setTextContent(node, res.responseText)
-  }
+      recordedWord <- dic.getWord(text.text)
+      recordedExamples <- recordedWord.getExamples()
+    } {
+      this.recordedWord = Some(recordedWord)
+      this.recordedExamples = Some(recordedExamples)
 
-  def recognize(image: dom.raw.ImageData): Unit = {
-    val x = global.Tesseract.recognize(
-      image, js.Dynamic.literal(lang = "eng"), js.Dynamic.literal(logger = (m: js.Any) => dom.console.log(m)))
-
-    x.then((r: js.Any) => {
-      dom.console.log(r)
-      val rr = r.asInstanceOf[Resultx]
-      dom.console.log(rr.text)
-      result.value = rr.text
-    }, (e: js.Any) => {
-      dom.console.log("error")
-      dom.console.log(e)
-    })
-  }
-
-  def setCanvas(): Unit = {
-    val canvas = document.getElementById("canvas").asInstanceOf[dom.html.Canvas]
-    val rect = canvas.getBoundingClientRect()
-    val context = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
-
-    canvas.width = canvas.parentElement.clientWidth
-    canvas.height = canvas.parentElement.clientHeight
-
-    var start: Point[Double] = Point(0, 0)
-    var touchstart: Boolean = false
-
-    def drawLine(start: Point[Double], end: Point[Double]): Unit = {
-      context.beginPath()
-      context.lineWidth = 3
-      context.moveTo(start.x - rect.left, start.y - rect.top)
-      context.lineTo(end.x - rect.left, end.y - rect.top)
-      context.stroke()
-    }
-
-
-    def point(e: dom.TouchEvent): Option[Point[Double]] = {
-      val touches = e.changedTouches
-      if(touches.length == 1) {
-        val touch = touches.head
-        Some(Point(touch.clientX, touch.clientY))
-      } else {
-        None
-      }
-    }
-
-    canvas.addEventListener("touchstart", (event: dom.Event) => {
-      Recognize.cancel()
-      event.preventDefault()
-      start = point(event.asInstanceOf[dom.TouchEvent]).get
-      touchstart = true
-    })
-
-    canvas.addEventListener("touchmove", (event: dom.Event) => {
-      if(touchstart) {
-        event.preventDefault()
-        val end = point(event.asInstanceOf[dom.TouchEvent]).get
-        drawLine(start, end)
-        start = end
-      }
-    })
-
-    canvas.addEventListener("touchend", (event: dom.Event) => {
-      touchstart = false
-      Recognize.start(context.getImageData(0, 0, canvas.width, canvas.height), recognize)
-    })
-
-    canvas.onmousedown = (event) => {
-      Recognize.cancel()
-      start = Point(event.clientX, event.clientY)
-      touchstart = true
-    }
-
-    canvas.onmousemove = (event) => {
-      if(touchstart) {
-        val end = Point(event.clientX, event.clientY)
-        drawLine(start, end)
-        start = end
-      }
-    }
-
-    canvas.onmouseup = (event) => {
-      touchstart = false
-      Recognize.start(context.getImageData(0, 0, canvas.width, canvas.height), recognize)
+      screenWord.disable()
+      screenEditExample.disable()
+      screenDetail.show(recordedWord.word, recordedExamples.examples.toList)
     }
   }
-}
 
-object Recognize {
-  val timer = new java.util.Timer()
-  var task: RecognizeTask = _
+  def editExample(event: dom.CustomEvent): Unit = {
+    screenWord.disable()
+    screenDetail.disable()
 
-  def start(img: dom.raw.ImageData, fn: (dom.raw.ImageData) => Unit): Unit = {
-    if(task != null) {
-      task.cancel()
-    }
-    task = new RecognizeTask(img, fn)
-    timer.schedule(task , 2000)
+    val detail = event.detail.asInstanceOf[EditExample]
+    screenEditExample.show(detail)
   }
 
-  def cancel(): Unit = {
-    if(task != null) {
-      task.cancel()
+  def applyEditExample(event: dom.CustomEvent): Unit = {
+    val detail = event.detail.asInstanceOf[ApplyEditExample]
+    for(res <- recordedExamples.get.updateExample(detail.data)) {
+      this.recordedExamples = Some(res)
+      screenWord.disable()
+      screenEditExample.disable()
+      screenDetail.show(recordedWord.get.word, recordedExamples.get.examples.toList)
     }
   }
-}
 
-class RecognizeTask(val img: dom.raw.ImageData, val fn: (dom.raw.ImageData) => Unit) extends java.util.TimerTask {
-  override def run(): Unit = {
-    dom.console.log("waiting...")
-    fn(img)
+  def cancelEditExample(event: dom.CustomEvent): Unit = {
+    val detail = event.detail.asInstanceOf[CancelEditExample]
+
+    screenWord.disable()
+    screenEditExample.disable()
+    screenDetail.show(recordedWord.get.word, recordedExamples.get.examples.toList)
   }
 }
