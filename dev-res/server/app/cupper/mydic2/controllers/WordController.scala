@@ -28,7 +28,7 @@ class WordController @Inject()(
         "id" -> word.id,
         "text" -> word.text,
         "ref_count"-> word.refCount,
-        "last_ref_time" -> word.lastRefTime.toString
+        "last_ref_time" -> dateTime2String(word.lastRefTime)
       ).toString()
       Ok(words.mkString("[", ",", "]"))
     }
@@ -42,7 +42,7 @@ class WordController @Inject()(
             "id" -> w.id,
             "word" -> w.text,
             "ref_count" -> w.refCount,
-            "last_ref_time" -> w.lastRefTime.toString
+            "last_ref_time" -> dateTime2String(w.lastRefTime)
           )
           Ok(json.toString())
         })
@@ -50,6 +50,25 @@ class WordController @Inject()(
         Future(BadRequest("aho"))
     }
   }
+
+  def update(id: Int) = Action.async(implicit request => request.body.asJson match {
+    case Some(w) => {
+      val text = (w \ "text").as[JsString].value
+      usecase.updateText(id, text).map(w => w match {
+        case Some(v) =>
+          val json = Json.obj(
+            "id" -> v.id,
+            "text" -> v.text,
+            "ref_count" -> v.refCount,
+            "last_ref_time" -> dateTime2String(v.lastRefTime)
+          )
+          Ok(json.toString())
+        case None =>
+          BadRequest("aho")
+      })
+    }
+    case None => Future(BadRequest("aho"))
+  })
 
   def createIfNotExist2 = Action { implicit request =>
     case class Person(firstName: String, lastName: String, age: Int)

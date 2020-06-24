@@ -6,6 +6,8 @@ import org.scalajs.dom.html.Button
 import cupper.mydic2.utils.DomUtils._
 import cupper.mydic2.utils.{ListItemId, SpeechSynthesis, SpeechSynthesisUtterance}
 import cupper.mydic2.value._
+import cupper.mydic2.value.DateTimeFormatter._
+import cupper.mydic2.view.event.EditWord
 import cupper.mydic2.view.event.EditExample
 import cupper.mydic2.view.event.Event
 
@@ -30,7 +32,7 @@ class ScreenDetail(val element: Element) {
     setTextContent(this.wordText, word.text)
     setTextContent(this.wordId, word.id.toString)
     setIntContent(this.refCount, word.refCount)
-    setTextContent(this.lastRefTime, word.lastRefTime.toString)
+    setTextContent(this.lastRefTime, dateTime2String(word.lastRefTime))
 
     examples.foreach(example => {
       val el = addItem(this.examples, example.text, s"[${example.id}]").asInstanceOf[Element]
@@ -47,6 +49,9 @@ class ScreenDetail(val element: Element) {
 
     element.style.display = "block"
   }
+
+  // dispatch edit word
+  wordText.asInstanceOf[Element].onclick = (event) => Event.dispatch(EditWord(this.word.get))
 
   def disable(): Unit = element.style.display = "none"
 

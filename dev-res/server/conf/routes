@@ -9,6 +9,8 @@ GET         /word                           cupper.mydic2.controllers.WordContro
 GET         /word/                          cupper.mydic2.controllers.WordController.getInformation
 +nocsrf
 POST        /word                           cupper.mydic2.controllers.WordController.createIfNotExist
++nocsrf
+PUT         /word/:id                       cupper.mydic2.controllers.WordController.update(id:Int)
 GET         /word/all                       cupper.mydic2.controllers.WordController.getAll
 GET         /word/:id/example               cupper.mydic2.controllers.ExampleController.get(id:Int)
 +nocsrf

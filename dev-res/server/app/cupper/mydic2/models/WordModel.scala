@@ -24,6 +24,8 @@ class WordModel @Inject() (repo: WordRepo) {
     })
   }
 
+  def updateText(id: Int, text: String): Future[Option[Word]] = repo.updateText(id, text)
+
   def getAll(): List[Word] = {
     repo.getAll()
   }

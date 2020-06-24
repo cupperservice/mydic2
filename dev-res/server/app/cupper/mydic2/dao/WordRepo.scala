@@ -23,23 +23,9 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
   }
 
   override def get(id: Int): Future[Option[Word]] = {
-    Future[Option[Word]] {
-      db.withConnection { connection =>
-        val stmt = connection.prepareStatement("select * from word where id=?")
-        stmt.setInt(1, id)
-        val rs = stmt.executeQuery()
-        if(rs.next()) {
-          Some(Word(
-            rs.getInt(1),
-            rs.getString(2),
-            rs.getInt(3),
-            rs.getString(4))
-          )
-        } else {
-          None
-        }
-      }
-    }(databaseExecutionContext)
+    Future[Option[Word]](
+      db.withConnection(connection => _get(id, connection))
+    )(databaseExecutionContext)
   }
 
   override def find(word: String): Future[Option[Word]] = {
@@ -56,6 +42,15 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
         _insert(word, connection)
         _find(word, connection).get
       }
+    }(databaseExecutionContext)
+  }
+
+  override def updateText(id: Int, text: String): Future[Option[Word]] = {
+    Future[Option[Word]] {
+      db.withConnection(connection => {
+        _updateText(id, text, connection)
+        _get(id, connection)
+      })
     }(databaseExecutionContext)
   }
 
@@ -92,6 +87,21 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
     })
   }
 
+  def _get(id: Int, connection: Connection): Option[Word] = {
+    val stmt = connection.prepareStatement("select * from word where id=?")
+    stmt.setInt(1, id)
+    val rs = stmt.executeQuery()
+    if(rs.next())
+      Some(Word(
+        rs.getInt(1),
+        rs.getString(2),
+        rs.getInt(3),
+        rs.getString(4))
+      )
+    else
+      None
+  }
+
   def _find(word: String, connection: Connection): Option[Word] = {
     val stmt = connection.prepareStatement("select * from word where word=?")
     stmt.setString(1, word)
@@ -113,6 +123,13 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
     stmt.setString(1, word)
     stmt.setInt(2, 1)
     stmt.setString(3, DateTime(System.currentTimeMillis()))
+    stmt.executeUpdate()
+  }
+
+  def _updateText(id: Int, text: String, connection: Connection): Int = {
+    val stmt = connection.prepareStatement("update word set word=? where id=?")
+    stmt.setString(1, text)
+    stmt.setInt(2, 1)
     stmt.executeUpdate()
   }
 }

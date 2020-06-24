@@ -10,5 +10,6 @@ trait WordRepo {
   def create(word: String): Future[Word]
   def find(word: String): Future[Option[Word]]
   def updateReference(id: Int): Future[Int]
+  def updateText(id: Int, text: String): Future[Option[Word]]
   def getAll(): List[Word]
 }
