@@ -11,7 +11,7 @@ trait Result extends js.Any {
 @js.native
 trait CreateIfNotExistResponse extends js.Any {
   val id: Int = js.native
-  val word: String = js.native
+  val text: String = js.native
   val ref_count: Int = js.native
   val last_ref_time: String = js.native
 }
@@ -35,7 +35,7 @@ trait UpdateWordResponse extends js.Any {
 @js.native
 trait GetExampleResponse extends js.Any {
   val id: Int = js.native
-  val content: String = js.native
+  val text: String = js.native
 }
 
 @js.native

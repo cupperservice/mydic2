@@ -27,7 +27,7 @@ class RepositoryImpl extends Repository {
     }
 
     for(res <- apply(text)) yield {
-      Some(Word(res.id, res.word, res.ref_count, res.last_ref_time))
+      Some(Word(res.id, res.text, res.ref_count, res.last_ref_time))
     }
   }
 
@@ -43,7 +43,7 @@ class RepositoryImpl extends Repository {
 
     implicit val repo: Repository = this
     for(res <- apply(word.id)) yield
-      res.foldLeft(List[Example]())((list, e) => Example(e.id, e.content) :: list)
+      res.foldLeft(List[Example]())((list, e) => Example(e.id, e.text) :: list)
   }
 
   override def createExample(example: Example, word: Word): Future[Example] = {

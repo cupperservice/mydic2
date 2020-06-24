@@ -40,7 +40,7 @@ class WordController @Inject()(
         usecase.createIfNotExist((w \ "word").as[JsString].value).map(w => {
           val json = Json.obj(
             "id" -> w.id,
-            "word" -> w.text,
+            "text" -> w.text,
             "ref_count" -> w.refCount,
             "last_ref_time" -> dateTime2String(w.lastRefTime)
           )

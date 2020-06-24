@@ -22,7 +22,7 @@ class ExampleController @Inject() (
     Future {
       val result = for(e <- example.getExamples(wordId)) yield Json.obj (
         "id" -> e.id,
-        "content" -> e.text
+        "text" -> e.text
       ).toString()
 
       Ok(result.mkString("[", ",", "]"))
