@@ -25,6 +25,14 @@ trait GetWordResponse extends js.Any {
 }
 
 @js.native
+trait UpdateWordResponse extends js.Any {
+  val id: Int = js.native
+  val text: String = js.native
+  val ref_count: Int = js.native
+  val last_ref_time: String = js.native
+}
+
+@js.native
 trait GetExampleResponse extends js.Any {
   val id: Int = js.native
   val content: String = js.native

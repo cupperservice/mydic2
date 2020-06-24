@@ -6,12 +6,11 @@ import play.api.mvc._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
 
-import scala.util.Failure
-import scala.util.Success
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
-import cupper.mydic2.models.Values.DateTimeFormatter._
+import cupper.mydic2.value.Word
+import cupper.mydic2.value.DateTimeFormatter._
 
 @Singleton
 class WordController @Inject()(
@@ -27,9 +26,9 @@ class WordController @Inject()(
     Future {
       val words = for(word <- usecase.getAll()) yield Json.obj (
         "id" -> word.id,
-        "text" -> word.word,
-        "ref_count"-> word.ref_count,
-        "last_ref_time" -> dateTime2String(word.last_ref_time)
+        "text" -> word.text,
+        "ref_count"-> word.refCount,
+        "last_ref_time" -> dateTime2String(word.lastRefTime)
       ).toString()
       Ok(words.mkString("[", ",", "]"))
     }
@@ -41,9 +40,9 @@ class WordController @Inject()(
         usecase.createIfNotExist((w \ "word").as[JsString].value).map(w => {
           val json = Json.obj(
             "id" -> w.id,
-            "word" -> w.word,
-            "ref_count" -> w.ref_count,
-            "last_ref_time" -> dateTime2String(w.last_ref_time)
+            "word" -> w.text,
+            "ref_count" -> w.refCount,
+            "last_ref_time" -> dateTime2String(w.lastRefTime)
           )
           Ok(json.toString())
         })
@@ -51,6 +50,25 @@ class WordController @Inject()(
         Future(BadRequest("aho"))
     }
   }
+
+  def update(id: Int) = Action.async(implicit request => request.body.asJson match {
+    case Some(w) => {
+      val text = (w \ "text").as[JsString].value
+      usecase.updateText(id, text).map(w => w match {
+        case Some(v) =>
+          val json = Json.obj(
+            "id" -> v.id,
+            "text" -> v.text,
+            "ref_count" -> v.refCount,
+            "last_ref_time" -> dateTime2String(v.lastRefTime)
+          )
+          Ok(json.toString())
+        case None =>
+          BadRequest("aho")
+      })
+    }
+    case None => Future(BadRequest("aho"))
+  })
 
   def createIfNotExist2 = Action { implicit request =>
     case class Person(firstName: String, lastName: String, age: Int)

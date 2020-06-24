@@ -2,7 +2,7 @@ package cupper.mydic2.models
 
 import scala.concurrent.Future
 
-import Values._
+import cupper.mydic2.value.Word
 
 trait WordRepo {
   def count(): Future[Int]
@@ -10,5 +10,6 @@ trait WordRepo {
   def create(word: String): Future[Word]
   def find(word: String): Future[Option[Word]]
   def updateReference(id: Int): Future[Int]
+  def updateText(id: Int, text: String): Future[Option[Word]]
   def getAll(): List[Word]
 }

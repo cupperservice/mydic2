@@ -14,6 +14,9 @@ case class FindForWord(text: String) extends Event
 case class EditExample(id: Int, text: String, word: Word) extends Event
 case class ApplyEditExample(data: Example) extends Event
 case class CancelEditExample() extends Event
+case class EditWord(word: Word) extends Event
+case class ApplyEditWord(word: Word) extends Event
+case class CancelEditWord() extends Event
 
 object Event {
   val goHome = "goHome"
@@ -21,6 +24,9 @@ object Event {
   val editExample = "editExample"
   val applyEditExample = "applyEditExample"
   val cancelEditExample = "cancelEditExample"
+  val editWord = "editWord"
+  val applyEditWord = "applyEditWord"
+  val cancelEditWord = "cancelEditWord"
 
   def dispatch(event: Event): Unit = {
     val eventType = event match {
@@ -29,6 +35,9 @@ object Event {
       case e: EditExample => editExample
       case e: ApplyEditExample => applyEditExample
       case e: CancelEditExample => cancelEditExample
+      case e: EditWord => editWord
+      case e: ApplyEditWord => applyEditWord
+      case e: CancelEditWord => cancelEditWord
     }
 
     dom.document.dispatchEvent(new CustomEvent(eventType, new CustomEventInit {
