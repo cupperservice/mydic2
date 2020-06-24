@@ -2,10 +2,10 @@ package cupper.mydic2.models
 
 import javax.inject.Inject
 
-import Values._
-
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
+
+import cupper.mydic2.value.Example
 
 class ExampleModel @Inject() (exampleRepo: ExampleRepo, wordRepo: WordRepo) {
   def getExamples(wordId: Int): Seq[Example] = {
@@ -42,7 +42,7 @@ class ExampleModel @Inject() (exampleRepo: ExampleRepo, wordRepo: WordRepo) {
     val example = get(wordId, exampleId)
     example match {
       case Some(e) =>
-        exampleRepo.update(exampleId, text, e.word)
+        exampleRepo.update(exampleId, text)
       case None =>
         None
     }

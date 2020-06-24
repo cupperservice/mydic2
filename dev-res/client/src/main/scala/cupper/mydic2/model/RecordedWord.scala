@@ -1,7 +1,6 @@
 package cupper.mydic2.model
 
 import cupper.mydic2.value.Word
-import cupper.mydic2.value.Example
 import cupper.mydic2.repository.Repository
 
 import scala.concurrent.Future

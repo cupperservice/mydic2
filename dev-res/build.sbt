@@ -15,6 +15,7 @@ lazy val server = (project in file("server")).settings(commonSettings).settings(
     jdbc,
     evolutions,
     guice,
+    "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
     specs2 % Test
   ),
   // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
@@ -27,7 +28,8 @@ lazy val client = (project in file("client")).settings(commonSettings).settings(
   scalaJSUseMainModuleInitializer := true,
   libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "1.0.0",
-    "org.scalatest" %%% "scalatest" % "3.1.2" % Test
+    "org.scalatest" %%% "scalatest" % "3.1.2" % Test,
+    "org.scalamock" %% "scalamock" % "4.4.0" % Test,
   ),
   // skip in packageJSDependencies := false,
   // jsDependencies ++= Seq(
@@ -41,7 +43,12 @@ lazy val client = (project in file("client")).settings(commonSettings).settings(
 lazy val shared = crossProject(JSPlatform, JVMPlatform)
   .crossType(CrossType.Pure)
   .in(file("shared"))
-  .settings(commonSettings)
+  .settings(commonSettings).settings(
+  libraryDependencies ++= Seq(
+    "org.scalatest" %%% "scalatest" % "3.1.2" % Test,
+    "org.scalamock" %% "scalamock" % "4.4.0" % Test,
+  )
+)
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
 

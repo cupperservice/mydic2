@@ -6,12 +6,11 @@ import play.api.mvc._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
 
-import scala.util.Failure
-import scala.util.Success
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
-import cupper.mydic2.models.Values.DateTimeFormatter._
+import cupper.mydic2.value.Word
+import cupper.mydic2.value.DateTimeFormatter._
 
 @Singleton
 class WordController @Inject()(
@@ -27,9 +26,9 @@ class WordController @Inject()(
     Future {
       val words = for(word <- usecase.getAll()) yield Json.obj (
         "id" -> word.id,
-        "text" -> word.word,
-        "ref_count"-> word.ref_count,
-        "last_ref_time" -> dateTime2String(word.last_ref_time)
+        "text" -> word.text,
+        "ref_count"-> word.refCount,
+        "last_ref_time" -> word.lastRefTime.toString
       ).toString()
       Ok(words.mkString("[", ",", "]"))
     }
@@ -41,9 +40,9 @@ class WordController @Inject()(
         usecase.createIfNotExist((w \ "word").as[JsString].value).map(w => {
           val json = Json.obj(
             "id" -> w.id,
-            "word" -> w.word,
-            "ref_count" -> w.ref_count,
-            "last_ref_time" -> dateTime2String(w.last_ref_time)
+            "word" -> w.text,
+            "ref_count" -> w.refCount,
+            "last_ref_time" -> w.lastRefTime.toString
           )
           Ok(json.toString())
         })

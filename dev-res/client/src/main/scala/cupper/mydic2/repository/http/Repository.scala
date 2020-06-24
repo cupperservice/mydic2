@@ -4,6 +4,7 @@ import org.scalajs.dom.ext.Ajax
 import cupper.mydic2.value.{Example, NumOfAllWords, Word}
 import cupper.mydic2.model.{DictionaryInformation, RecordedExamples, RecordedWord}
 import cupper.mydic2.repository.Repository
+import cupper.mydic2.value.DateTimeFormatter._
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.concurrent.Future

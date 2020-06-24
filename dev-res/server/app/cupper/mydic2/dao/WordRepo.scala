@@ -1,15 +1,14 @@
 package cupper.mydic2.dao
 
-import java.sql.{Connection, ResultSet}
+import java.sql.Connection
 
 import javax.inject.Inject
 import play.api.db.Database
 
 import scala.concurrent.Future
 import cupper.mydic2.models.{WordRepo => WordRepoIF}
-import cupper.mydic2.models.Values.Word
-import cupper.mydic2.models.Values.DateTime
-import cupper.mydic2.models.Values.DateTimeFormatter._
+import cupper.mydic2.value.{Word, DateTime}
+import cupper.mydic2.value.DateTimeFormatter._
 
 class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecutionContext) extends WordRepoIF {
   override def count(): Future[Int] = {
@@ -34,7 +33,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
             rs.getInt(1),
             rs.getString(2),
             rs.getInt(3),
-            string2DateTime(rs.getString(4)))
+            rs.getString(4))
           )
         } else {
           None
@@ -64,7 +63,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
     Future[Int] {
       db.withConnection { connection =>
         val stmt = connection.prepareStatement("update word set ref_count = ref_count + 1, last_ref_time = ? where id = ?")
-        stmt.setString(1, dateTime2String(DateTime(System.currentTimeMillis())))
+        stmt.setString(1, DateTime(System.currentTimeMillis()))
         stmt.setInt(2, id)
         stmt.executeUpdate()
      }
@@ -82,7 +81,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
             rs.getInt(1),
             rs.getString(2),
             rs.getInt(3),
-            string2DateTime(rs.getString(4))
+            rs.getString(4)
           )
           word :: createResult(result)
         } else {
@@ -102,7 +101,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
         rs.getInt(1),
         rs.getString(2),
         rs.getInt(3),
-        string2DateTime(rs.getString(4)))
+        rs.getString(4))
       )
     } else {
       None
@@ -113,7 +112,7 @@ class WordRepo @Inject() (db: Database, databaseExecutionContext: DatabaseExecut
     val stmt = connection.prepareStatement("insert into word(word, ref_count, last_ref_time) values(?, ?, ?)")
     stmt.setString(1, word)
     stmt.setInt(2, 1)
-    stmt.setString(3, dateTime2String(long2DateTime(System.currentTimeMillis())))
+    stmt.setString(3, DateTime(System.currentTimeMillis()))
     stmt.executeUpdate()
   }
 }

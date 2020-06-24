@@ -30,7 +30,7 @@ class ScreenDetail(val element: Element) {
     setTextContent(this.wordText, word.text)
     setTextContent(this.wordId, word.id.toString)
     setIntContent(this.refCount, word.refCount)
-    setTextContent(this.lastRefTime, word.lastRefTime)
+    setTextContent(this.lastRefTime, word.lastRefTime.toString)
 
     examples.foreach(example => {
       val el = addItem(this.examples, example.text, s"[${example.id}]").asInstanceOf[Element]

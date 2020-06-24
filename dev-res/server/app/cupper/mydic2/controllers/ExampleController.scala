@@ -22,7 +22,7 @@ class ExampleController @Inject() (
     Future {
       val result = for(e <- example.getExamples(wordId)) yield Json.obj (
         "id" -> e.id,
-        "content" -> e.content
+        "content" -> e.text
       ).toString()
 
       Ok(result.mkString("[", ",", "]"))
@@ -42,7 +42,7 @@ class ExampleController @Inject() (
                   "message" -> M000
                 ),
                 "id" -> ex.id,
-                "text" -> ex.content).toString())
+                "text" -> ex.text).toString())
             case None =>
               Ok(Json.obj(
                 fields = "result" -> Json.obj(
@@ -70,7 +70,7 @@ class ExampleController @Inject() (
                   "message" -> M000
                 ),
                 "id" -> ex.id,
-                "text" -> ex.content).toString())
+                "text" -> ex.text).toString())
             case None =>
               Ok(Json.obj(
                 fields = "result" -> Json.obj(

@@ -1,12 +1,15 @@
 package cupper.mydic2.value
 
 case class NumOfAllWords(num: Int)
-case class Word(id: Int, text: String, refCount: Int, lastRefTime: String)
-case class Example(id: Int, text: String) {
-  override def hashCode(): Int = id.hashCode()
+case class Word(id: Int, text: String, refCount: Int, lastRefTime: DateTime)
+case class Example(id: Int, text: String)
+case class DateTime(time: Long) {
+  override def toString: String = DateTimeFormatter.dateTime2String(this)
+}
 
-  override def equals(obj: Any): Boolean = obj match {
-    case v: Example => v.id == id
-    case _ => false
-  }
+// The following code is different JVM and JS
+object DateTimeFormatter {
+  implicit def dateTime2String(time: DateTime): String = ???
+  implicit def string2DateTime(time: String): DateTime = ???
+  implicit def long2DateTime(time: Long): DateTime = ???
 }
