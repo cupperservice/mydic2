@@ -6,18 +6,16 @@ import org.scalajs.dom.html.Input
 
 import cupper.mydic2.value.Word
 import cupper.mydic2.view.event.Event
-import cupper.mydic2.view.event.ApplyEditWord
-import cupper.mydic2.view.event.CancelEditWord
 
 class EditWord(val _top: Element) extends Screen(_top) {
   var word: Option[Word] = None
   val text = document.getElementById("edit-word-text").asInstanceOf[Input]
 
   document.getElementById("edit-word-ok").asInstanceOf[Element].onclick = (event) =>
-    Event.dispatch(ApplyEditWord(this.word.get.copy(text = text.value)))
+    Event.dispatch(Event.ApplyEditWord(this.word.get.copy(text = text.value)))
 
   document.getElementById("edit-word-cancel").asInstanceOf[Element].onclick = (event) =>
-    Event.dispatch(CancelEditWord())
+    Event.dispatch(Event.CancelEditWord())
 
   def show(word: Word): Unit = {
     this.word = Some(word)

@@ -7,8 +7,6 @@ import cupper.mydic2.utils.DomUtils._
 import cupper.mydic2.utils.{ListItemId, SpeechSynthesis, SpeechSynthesisUtterance}
 import cupper.mydic2.value._
 import cupper.mydic2.value.DateTimeFormatter._
-import cupper.mydic2.view.event.EditWord
-import cupper.mydic2.view.event.EditExample
 import cupper.mydic2.view.event.Event
 
 class ScreenDetail(val element: Element) {
@@ -23,7 +21,7 @@ class ScreenDetail(val element: Element) {
     SpeechSynthesis.speak(new SpeechSynthesisUtterance(getTextContent(wordText)))
 
   document.getElementsByName("[0]").item(0).asInstanceOf[Element].onclick = (event) => {
-    Event.dispatch(EditExample(0, getTextContent(event.target.asInstanceOf[Element]), this.word.get))
+    Event.dispatch(Event.EditExample(0, getTextContent(event.target.asInstanceOf[Element]), this.word.get))
   }
 
   def show(word: Word, examples: List[Example]): Unit = {
@@ -43,7 +41,7 @@ class ScreenDetail(val element: Element) {
           case Some(i) => i
           case None => -1
         }
-        Event.dispatch(EditExample(id, getTextContent(target), this.word.get))
+        Event.dispatch(Event.EditExample(id, getTextContent(target), this.word.get))
       }
     })
 
@@ -51,7 +49,7 @@ class ScreenDetail(val element: Element) {
   }
 
   // dispatch edit word
-  wordText.asInstanceOf[Element].onclick = (event) => Event.dispatch(EditWord(this.word.get))
+  wordText.asInstanceOf[Element].onclick = (event) => Event.dispatch(Event.EditWord(this.word.get))
 
   def disable(): Unit = element.style.display = "none"
 

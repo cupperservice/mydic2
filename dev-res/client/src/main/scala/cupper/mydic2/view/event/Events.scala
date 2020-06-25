@@ -9,16 +9,17 @@ import cupper.mydic2.value.Word
 import cupper.mydic2.value.Example
 
 sealed trait Event
-case class GoHome() extends Event
-case class FindForWord(text: String) extends Event
-case class EditExample(id: Int, text: String, word: Word) extends Event
-case class ApplyEditExample(data: Example) extends Event
-case class CancelEditExample() extends Event
-case class EditWord(word: Word) extends Event
-case class ApplyEditWord(word: Word) extends Event
-case class CancelEditWord() extends Event
 
 object Event {
+  case class GoHome() extends Event
+  case class FindForWord(text: String) extends Event
+  case class EditExample(id: Int, text: String, word: Word) extends Event
+  case class ApplyEditExample(data: Example) extends Event
+  case class CancelEditExample() extends Event
+  case class EditWord(word: Word) extends Event
+  case class ApplyEditWord(word: Word) extends Event
+  case class CancelEditWord() extends Event
+
   val goHome = "goHome"
   val findForWord = "findForWord"
   val editExample = "editExample"

@@ -4,7 +4,7 @@ import org.scalajs.dom
 import org.scalajs.dom.document
 import org.scalajs.dom.window
 import cupper.mydic2.view.component.{Header, ScreenDetail, ScreenEditExample, ScreenWord, EditWord}
-import cupper.mydic2.view.event.{ApplyEditExample, CancelEditExample, EditExample, Event, FindForWord, ApplyEditWord}
+import cupper.mydic2.view.event.Event
 import cupper.mydic2.model.{RecordedExamples, RecordedWord}
 import cupper.mydic2.ComponentRegistry._
 
@@ -37,14 +37,15 @@ object Main {
     Event.addEventListener(Event.cancelEditExample, (event: dom.CustomEvent) => cancelEditExample(event))
 
     Event.addEventListener(Event.editWord, (event: dom.CustomEvent) => {
+      val detail = event.detail.asInstanceOf[Event.EditWord]
       screenWord.disable()
       screenEditExample.disable()
       screenDetail.disable()
-      screenEditWord.show(recordedWord.get.word)
+      screenEditWord.show(detail.word)
     })
 
     Event.addEventListener(Event.applyEditWord, (event) => {
-      for(res <- recordedWord.get.updateText(event.detail.asInstanceOf[ApplyEditWord].word.text)) {
+      for(res <- recordedWord.get.updateText(event.detail.asInstanceOf[Event.ApplyEditWord].word.text)) {
         recordedWord = res
 
         screenWord.disable()
@@ -72,7 +73,7 @@ object Main {
   }
 
   def findForWord(event: dom.CustomEvent): Unit = {
-    val text = event.detail.asInstanceOf[FindForWord]
+    val text = event.detail.asInstanceOf[Event.FindForWord]
     for {
       recordedWord <- dictionary.findWord(text.text)
       res <- recordedWord
@@ -93,12 +94,12 @@ object Main {
     screenEditWord.disable()
     screenDetail.disable()
 
-    val detail = event.detail.asInstanceOf[EditExample]
+    val detail = event.detail.asInstanceOf[Event.EditExample]
     screenEditExample.show(detail)
   }
 
   def applyEditExample(event: dom.CustomEvent): Unit = {
-    val detail = event.detail.asInstanceOf[ApplyEditExample]
+    val detail = event.detail.asInstanceOf[Event.ApplyEditExample]
     for(res <- recordedExamples.get.updateExample(detail.data)) {
       this.recordedExamples = Some(res)
       screenWord.disable()
@@ -109,7 +110,7 @@ object Main {
   }
 
   def cancelEditExample(event: dom.CustomEvent): Unit = {
-    val detail = event.detail.asInstanceOf[CancelEditExample]
+    val detail = event.detail.asInstanceOf[Event.CancelEditExample]
 
     screenWord.disable()
     screenEditWord.disable()
