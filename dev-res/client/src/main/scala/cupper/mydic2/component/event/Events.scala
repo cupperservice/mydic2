@@ -14,6 +14,7 @@ object Event {
   case class GoHome() extends Event
   case class FindForWord(text: String) extends Event
   case class EditExample(id: Int, text: String, word: Word) extends Event
+  case class CreateNewExample(word: Word) extends Event
   case class ApplyEditExample(data: Example) extends Event
   case class CancelEditExample() extends Event
   case class EditWord(word: Word) extends Event
@@ -34,6 +35,7 @@ object Event {
       case e: GoHome => goHome
       case e: FindForWord => findForWord
       case e: EditExample => editExample
+      case e: CreateNewExample => editExample
       case e: ApplyEditExample => applyEditExample
       case e: CancelEditExample => cancelEditExample
       case e: EditWord => editWord

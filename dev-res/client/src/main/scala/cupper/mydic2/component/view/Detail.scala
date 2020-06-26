@@ -16,6 +16,7 @@ class DetailView(val _top: Element) extends Screen(_top) {
   val lastRefTime = document.getElementById("last_ref_time")
   val examples = document.getElementById("examples")
   val speakWordBtn = document.getElementById("btn-speak").asInstanceOf[Button]
+  val createNewExampleBtn = document.getElementById("create-new-example").asInstanceOf[Button]
 
   override def show(data: Data): Unit = {
     val detailData = data.asInstanceOf[DetailData]
@@ -33,11 +34,10 @@ class DetailView(val _top: Element) extends Screen(_top) {
       Event.dispatch(Event.EditWord(detailData.word))
 
     // Clear example list
-    while(examples.childNodes.length > 2) examples.removeChild(examples.lastChild)
+    while(examples.childNodes.length > 0) examples.removeChild(examples.firstChild)
 
-    // TODO タイトルはリストの先頭ではなく独立して定義させる
-    document.getElementsByName("[0]").item(0).asInstanceOf[Element].onclick = (event) =>
-      Event.dispatch(Event.EditExample(0, getTextContent(event.target.asInstanceOf[Element]), detailData.word))
+    // Create new example
+    createNewExampleBtn.onclick = (event) => Event.dispatch(Event.CreateNewExample(detailData.word))
 
     detailData.examples.foreach(example => {
       val el = addItem(this.examples, example.text, s"[${example.id}]").asInstanceOf[Element]

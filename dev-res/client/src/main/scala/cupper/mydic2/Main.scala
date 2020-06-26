@@ -105,8 +105,12 @@ object Main {
     editWordView.disable()
     detailView.disable()
 
-    val detail = event.detail.asInstanceOf[Event.EditExample]
-    val editExampleData = EditExampleData(detail.word, Example(detail.id, detail.text), editExampleView)
+    val editExampleData = event.detail match {
+      case d: Event.CreateNewExample =>
+        EditExampleData(d.word, Example(-1, ""), editExampleView)
+      case d: Event.EditExample =>
+        EditExampleData(d.word, Example(d.id, d.text), editExampleView)
+    }
     editExampleData.show()
   }
 
