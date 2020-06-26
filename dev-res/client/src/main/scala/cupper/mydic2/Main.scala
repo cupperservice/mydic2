@@ -3,19 +3,21 @@ package cupper.mydic2
 import org.scalajs.dom
 import org.scalajs.dom.document
 import org.scalajs.dom.window
-import cupper.mydic2.view.component.{Header, ScreenDetail, ScreenEditExample, ScreenWord, EditWord}
-import cupper.mydic2.view.event.Event
+import cupper.mydic2.component.view.{HomeView, Header, EditWordView, DetailView, EditExampleView}
+import cupper.mydic2.component.view.{HomeData, DetailData, EditExampleData, EditWordData}
+import cupper.mydic2.component.event.Event
 import cupper.mydic2.model.{RecordedExamples, RecordedWord}
 import cupper.mydic2.ComponentRegistry._
+import cupper.mydic2.value.Example
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 
 object Main {
   lazy val header = Header(document.getElementById("header").asInstanceOf[dom.html.Element])
-  lazy val screenWord = ScreenWord(document.getElementById("screen-word").asInstanceOf[dom.html.Element])
-  lazy val screenEditWord = EditWord(document.getElementById("edit-word").asInstanceOf[dom.html.Element])
-  lazy val screenDetail = ScreenDetail(document.getElementById("screen-example").asInstanceOf[dom.html.Element])
-  lazy val screenEditExample = ScreenEditExample(document.getElementById("screen-edit-example").asInstanceOf[dom.html.Element])
+  lazy val homeView = HomeView(document.getElementById("home-tab").asInstanceOf[dom.html.Element])
+  lazy val editWordView = EditWordView(document.getElementById("edit-word-tab").asInstanceOf[dom.html.Element])
+  lazy val detailView = DetailView(document.getElementById("detail-tab").asInstanceOf[dom.html.Element])
+  lazy val editExampleView = EditExampleView(document.getElementById("edit-example-tab").asInstanceOf[dom.html.Element])
 
   var recordedWord: Option[RecordedWord] = None
   var recordedExamples: Option[RecordedExamples] = None
@@ -38,38 +40,45 @@ object Main {
 
     Event.addEventListener(Event.editWord, (event: dom.CustomEvent) => {
       val detail = event.detail.asInstanceOf[Event.EditWord]
-      screenWord.disable()
-      screenEditExample.disable()
-      screenDetail.disable()
-      screenEditWord.show(detail.word)
+      homeView.disable()
+      editExampleView.disable()
+      detailView.disable()
+
+      val data = EditWordData(detail.word, editWordView)
+      data.show()
     })
 
     Event.addEventListener(Event.applyEditWord, (event) => {
       for(res <- recordedWord.get.updateText(event.detail.asInstanceOf[Event.ApplyEditWord].word.text)) {
         recordedWord = res
 
-        screenWord.disable()
-        screenEditExample.disable()
-        screenDetail.show(recordedWord.get.word, recordedExamples.get.examples)
-        screenEditWord.disable()
+        val data = DetailData(recordedWord.get.word, recordedExamples.get.examples, detailView)
+        data.show()
+
+        homeView.disable()
+        editExampleView.disable()
+        editWordView.disable()
       }
     })
 
     Event.addEventListener(Event.cancelEditWord, (event) => {
-      screenWord.disable()
-      screenEditExample.disable()
-      screenDetail.show(recordedWord.get.word, recordedExamples.get.examples)
-      screenEditWord.disable()
+      val data = DetailData(recordedWord.get.word, recordedExamples.get.examples, detailView)
+      data.show()
+
+      homeView.disable()
+      editExampleView.disable()
+      editWordView.disable()
     })
   }
 
   def goHome(): Unit = {
-    for(list <- dictionary.getWords()) {
-      screenWord.show(list)
+    for(histories <- dictionary.getWords()) {
+      val home = HomeData(histories, homeView)
+      home.show()
     }
-    screenEditWord.disable()
-    screenDetail.disable()
-    screenEditExample.disable()
+    editWordView.disable()
+    detailView.disable()
+    editExampleView.disable()
   }
 
   def findForWord(event: dom.CustomEvent): Unit = {
@@ -82,39 +91,47 @@ object Main {
       this.recordedWord = Some(res)
       this.recordedExamples = Some(recordedExamples)
 
-      screenWord.disable()
-      screenEditWord.disable()
-      screenEditExample.disable()
-      screenDetail.show(res.word, recordedExamples.examples)
+      val data = DetailData(res.word, recordedExamples.examples, detailView)
+      data.show()
+
+      homeView.disable()
+      editWordView.disable()
+      editExampleView.disable()
     }
   }
 
   def editExample(event: dom.CustomEvent): Unit = {
-    screenWord.disable()
-    screenEditWord.disable()
-    screenDetail.disable()
+    homeView.disable()
+    editWordView.disable()
+    detailView.disable()
 
     val detail = event.detail.asInstanceOf[Event.EditExample]
-    screenEditExample.show(detail)
+    val editExampleData = EditExampleData(detail.word, Example(detail.id, detail.text), editExampleView)
+    editExampleData.show()
   }
 
   def applyEditExample(event: dom.CustomEvent): Unit = {
     val detail = event.detail.asInstanceOf[Event.ApplyEditExample]
     for(res <- recordedExamples.get.updateExample(detail.data)) {
       this.recordedExamples = Some(res)
-      screenWord.disable()
-      screenEditWord.disable()
-      screenEditExample.disable()
-      screenDetail.show(recordedWord.get.word, recordedExamples.get.examples.toList)
+
+      val data = DetailData(res.word, res.examples, detailView)
+      data.show()
+
+      homeView.disable()
+      editWordView.disable()
+      editExampleView.disable()
     }
   }
 
   def cancelEditExample(event: dom.CustomEvent): Unit = {
     val detail = event.detail.asInstanceOf[Event.CancelEditExample]
 
-    screenWord.disable()
-    screenEditWord.disable()
-    screenEditExample.disable()
-    screenDetail.show(recordedWord.get.word, recordedExamples.get.examples.toList)
+    val data = DetailData(recordedWord.get.word, recordedExamples.get.examples, detailView)
+    data.show()
+
+    homeView.disable()
+    editWordView.disable()
+    editExampleView.disable()
   }
 }

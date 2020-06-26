@@ -17,7 +17,7 @@
       </ul>
     </div>
     <div class="tabs">
-      <div class="tab_content" id="screen-word">
+      <div class="tab_content" id="home-tab">
         <div>
           <input id="text-word" class="word" type="text" />
           <button id="btn-check">
@@ -27,8 +27,8 @@
         <ul id="word_list"></ul>
       </div>
 
-      <div class="tab_content" id="screen-example">
-        <input type="hidden" id="screen-example-word-id"></input>
+      <div class="tab_content" id="detail-tab">
+        <input type="hidden" id="detail-word-id"></input>
         <div>
           <div class="ref_count">Reference count:<div class="ref_count" id="ref_count"></div>
           </div>
@@ -37,7 +37,7 @@
           <div class="last_ref_time">Last reference time:<div class="last_ref_time" id="last_ref_time"></div>
           </div>
         </div>
-        <div id="screen-example-word">
+        <div id="detail-word">
           <button id="btn-speak">
             <img src="/assets/images/speak.png" />
           </button>
@@ -47,18 +47,18 @@
         </ul>
       </div>
 
-      <div class="tab_content" id="edit-word">
+      <div class="tab_content" id="edit-word-tab">
         <input id="edit-word-text" class="word" type="text" />
-        <button id="edit-word-ok" >Ok</button>
+         <button id="edit-word-ok" >Ok</button>
         <button id="edit-word-cancel" >Cancel</button>
       </div>
 
-      <div class="tab_content" id="screen-edit-example">
-        <div id="screen-edit-example-word"></div>
-        <input type="hidden" id="screen-edit-example-id">
-        <textarea id="screen-edit-example-content" rows="5" cols="100"></textarea>
-        <button id="screen-edit-example-create" >Apply</button>
-        <button id="screen-edit-example-cancel" >Cancel</button>
+      <div class="tab_content" id="edit-example-tab">
+        <div id="edit-example-word"></div>
+        <input type="hidden" id="edit-example-id">
+        <textarea id="edit-example-content" rows="5" cols="100"></textarea>
+        <button id="edit-example-create" >Apply</button>
+        <button id="edit-example-cancel" >Cancel</button>
       </div>
     </div>
     <div id="footer">

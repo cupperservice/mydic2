@@ -1,7 +1,7 @@
 package cupper.mydic2.utils
 
 import org.scalajs.dom
-import cupper.mydic2.view.event.Event
+import cupper.mydic2.component.event.Event
 import org.scalajs.dom.raw.{CustomEvent, CustomEventInit}
 
 import scalajs.js

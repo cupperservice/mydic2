@@ -1,4 +1,4 @@
-package cupper.mydic2.view.event
+package cupper.mydic2.component.event
 
 import org.scalajs.dom
 import org.scalajs.dom.raw.{CustomEvent, CustomEventInit}
